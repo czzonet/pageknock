@@ -1,5 +1,3 @@
-import home from "./home";
-
 const store = {
   namespaced: true,
   state: {
@@ -16,7 +14,7 @@ const store = {
       state.loading = payload;
     },
   },
-  modules: { home },
+  modules: {},
   actions: {},
 } as MyStoreOption<State>;
 
