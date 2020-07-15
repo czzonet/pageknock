@@ -1,3 +1,5 @@
+import total from "./total";
+
 const store = {
   namespaced: true,
   state: {
@@ -14,7 +16,9 @@ const store = {
       state.loading = payload;
     },
   },
-  modules: {},
+  modules: {
+    total,
+  },
   actions: {},
 } as MyStoreOption<State>;
 
