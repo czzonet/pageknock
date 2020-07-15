@@ -8,6 +8,7 @@
     >
       <el-menu-item index="/main">首页</el-menu-item>
       <el-menu-item index="/main/template">模板</el-menu-item>
+      <el-menu-item index="/main/itemlist">字段列表</el-menu-item>
 
       <!-- <el-submenu index="1">
         <template slot="title">演示散点图</template>
