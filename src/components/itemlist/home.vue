@@ -1,11 +1,14 @@
 <template>
   <div class="home">
     <bar-content></bar-content>
+    <br />
+    <bar-add></bar-add>
   </div>
 </template>
 
 <script lang="ts">
 import BarContent from "./views/BarContent/index.vue";
+import BarAdd from "./views/BarAdd/index.vue";
 /** define */
 import {
   getMapMutations,
@@ -24,7 +27,7 @@ export default Vue.extend({
   props: {
     msg: String,
   },
-  components: { BarContent },
+  components: { BarContent, BarAdd },
   data() {
     return {
       data: {},
@@ -62,5 +65,9 @@ a {
 }
 .hello {
   padding: 40px;
+}
+
+.home {
+  text-align: left;
 }
 </style>

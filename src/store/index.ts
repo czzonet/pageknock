@@ -4,6 +4,7 @@ import Vuex, { StoreOptions } from "vuex";
 Vue.use(Vuex);
 
 import helloworld from "../components/helloworld/store";
+import itemlist from "../components/itemlist/store";
 
 const store = {
   state: {
@@ -12,7 +13,7 @@ const store = {
   },
   mutations: {},
   actions: {},
-  modules: { helloworld },
+  modules: { helloworld, itemlist },
 } as StoreOptions<State>;
 
 const MainStore = new Vuex.Store(store);
